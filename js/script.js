@@ -140,7 +140,7 @@ searchButtom.addEventListener('click', () => {
 	paginationUl.children[0].firstChild.className = 'active';		//sets the class active to the first pagination link
 
 	//checks and appends searchMatches to the dom if it's not empty else prints out message not found
-	if (searchMatches.length > 0 && searchMatches.length < 10) {
+	if (searchMatches.length > 0 && searchMatches.length <= 10) {
 		itemsToShow = searchMatches;
 		$studentList.append(itemsToShow);
 		// paginationUl.children[0].firstChild.style.display = 'none';
